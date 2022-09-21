@@ -15,7 +15,6 @@ const Controls = ({ onSearch, onFilter }) => {
   return (
     <Container>
       <Search
-        id="search"
         name="search"
         type="search"
         placeholder="Search for a country..."
@@ -25,8 +24,8 @@ const Controls = ({ onSearch, onFilter }) => {
       />
       <Select
         as="select"
-        id="regionSelect"
-        name="regionSelect"
+        name="region"
+        aria-label="region"
         defaultValue=""
         onChange={onFilter}
         icon={theme === 'light' ? chevronDown : chevronDownLight}
