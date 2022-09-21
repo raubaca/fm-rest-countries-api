@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/rest-countries-api-vite-fetch-api-react-router-styledcomponents-wvlxW5BXRE)
+- Live Site URL: [Vercel](https://rb-rest-countries-api.vercel.app/)
 
 ## My process
 

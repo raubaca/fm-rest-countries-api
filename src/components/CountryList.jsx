@@ -9,7 +9,7 @@ const CountryList = ({ countries }) => (
       {countries.map((c) => (
         <Card key={c.cca3}>
           <Link to={`/${c.cca3.toLowerCase()}`}>
-            <Flag src={c.flags.svg} alt={c.name.common} loading="lazy" />
+            <Flag src={c.flags.svg} alt={c.name.common} />
           </Link>
           <Info>
             <Title>{c.name.common}</Title>

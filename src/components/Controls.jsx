@@ -15,6 +15,8 @@ const Controls = ({ onSearch, onFilter }) => {
   return (
     <Container>
       <Search
+        id="search"
+        name="search"
         type="search"
         placeholder="Search for a country..."
         autoComplete="off"
@@ -23,6 +25,8 @@ const Controls = ({ onSearch, onFilter }) => {
       />
       <Select
         as="select"
+        id="select"
+        name="select"
         defaultValue=""
         onChange={onFilter}
         icon={theme === 'light' ? chevronDown : chevronDownLight}
