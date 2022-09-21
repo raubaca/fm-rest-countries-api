@@ -1,0 +1,96 @@
+:root {
+  --dark-blue: hsl(209, 23%, 22%);
+  --x-dark-blue: hsl(207, 26%, 17%);
+  --xx-dark-blue: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Light theme */
+  --text-color: var(--xx-dark-blue);
+  --input-color: var(--dark-gray);
+  --background-color: var(--light-gray);
+  --element-color: var(--white);
+
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07);
+}
+
+[data-theme='dark'] {
+  /* Dark theme */
+  --text-color: var(--white);
+  --input-color: var(--white);
+  --background-color: var(--x-dark-blue);
+  --element-color: var(--dark-blue);
+}
+
+/*
+- Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+
+- max-wrap: 1280px
+*/
+
+html {
+  font-size: 62.5%;
+  line-height: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+}
+
+button,
+input,
+select {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    line-height: 1;
+  }
+}
