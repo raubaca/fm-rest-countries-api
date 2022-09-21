@@ -30,7 +30,7 @@ const CountryList = ({ countries }) => (
   </Container>
 );
 
-const Container = styled.section`
+const Container = styled.div`
   margin-bottom: 2.5rem;
   @media screen and (min-width: 769px) {
     margin-bottom: 5rem;

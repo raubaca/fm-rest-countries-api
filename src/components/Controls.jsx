@@ -25,8 +25,8 @@ const Controls = ({ onSearch, onFilter }) => {
       />
       <Select
         as="select"
-        id="select"
-        name="select"
+        id="regionSelect"
+        name="regionSelect"
         defaultValue=""
         onChange={onFilter}
         icon={theme === 'light' ? chevronDown : chevronDownLight}
@@ -42,7 +42,7 @@ const Controls = ({ onSearch, onFilter }) => {
   );
 };
 
-const Container = styled.section`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3rem;

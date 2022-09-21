@@ -81,7 +81,7 @@ const Country = () => {
   );
 };
 
-const Container = styled.section`
+const Container = styled.div`
   padding: 1rem;
 `;
 
