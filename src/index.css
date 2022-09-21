@@ -8,11 +8,11 @@
 
   /* Light theme */
   --text-color: var(--xx-dark-blue);
-  --input-color: var(--dark-gray);
+  --input-color: var(--xx-dark-blue);
   --background-color: var(--light-gray);
   --element-color: var(--white);
 
-  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.07);
+  --shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme='dark'] {
