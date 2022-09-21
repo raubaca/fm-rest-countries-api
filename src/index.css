@@ -12,7 +12,7 @@
   --background-color: var(--light-gray);
   --element-color: var(--white);
 
-  --shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  --shadow: 0 0 8px rgba(0, 0, 0, 0.07);
 }
 
 [data-theme='dark'] {
