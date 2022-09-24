@@ -40,7 +40,10 @@ const Container = styled.div`
 const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 7.5rem;
+  gap: 2.5rem;
+  @media screen and (min-width: 769px) {
+    gap: 7.5rem;
+  }
 `;
 
 const Card = styled.li`

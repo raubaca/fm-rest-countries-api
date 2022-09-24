@@ -1,6 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { AppContext } from '../App';
 
-export const useCountries = (data) => {
+export const useCountries = () => {
+  const { data } = useContext(AppContext);
+
   const [countries, setCountries] = useState(data);
   const [search, setSearch] = useState('');
   const [filter, setFilter] = useState('');
@@ -16,9 +19,13 @@ export const useCountries = (data) => {
     );
   }, [search, filter]);
 
+  const filterByRegion = (e) => setFilter(e.target.value);
+
+  const searchByName = (e) => setSearch(e.target.value);
+
   return {
     countries,
-    setSearch,
-    setFilter,
+    filterByRegion,
+    searchByName,
   };
 };
